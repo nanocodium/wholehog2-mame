@@ -1,0 +1,900 @@
+## AtomicStrobe
+DMXPersonality p = P 34 34-Channel Atomic
+  RED 
+  GREEN 
+  BLUE 
+  RED 
+  GREEN 
+  BLUE 
+  RED 
+  GREEN 
+  BLUE 
+  RED 
+  GREEN 
+  BLUE 
+  RED 
+  GREEN 
+  BLUE 
+  RED 
+  GREEN 
+  BLUE 
+  RED 
+  GREEN 
+  BLUE 
+  RED 
+  GREEN 
+  BLUE ;
+p  INTENSITY ;
+p  FOCUS ;
+## Atomictilt
+P 6 6-Channel RGB + Focus + Tilt
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  TILT ,
+P 7 7-Channel RGB + Focus + Strobe + Tilt
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  FOCUS 
+  TILT 
+## Beam7R
+P 7 7ch - Standard
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT ,
+P 10 10ch - Extended
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism
+  FOCUS Prism Zoom
+  FOCUS Prism Rotation
+## BigPanel2
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## BigPanel
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## Blinder1x1
+P 5 5-Channel iRGB + Strobe
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+## Blinder2x2
+P 4 4-Channel iRGB
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## Blinder2x2warm
+P 1 1-Channel Mode
+  INTENSITY 
+## Blinder
+P 4 4-Channel iRGB
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## Blinderwarm
+P 1 1-Channel Mode
+  INTENSITY 
+## CakeWaterJet
+P 1 1-Channel Mode
+  INTENSITY 
+## ConfettiCannon
+P 1 1-Channel Confetti Cannon
+  INTENSITY 
+## DWTPanel
+P 6 6-Channel Mode
+  FOCUS 
+  FOCUS 
+  FOCUS 
+  FOCUS 
+  INTENSITY 
+  PAN 
+## FanWaterJet
+P 1 1-Channel Mode
+  INTENSITY 
+## FireworkLauncher
+P 3 3-Channel Firework
+  INTENSITY 
+  TILT 
+  FOCUS 
+## FlameProjector
+P 2 2-Channel Flame Projector
+  INTENSITY 
+  FOCUS 
+## FlameThrower
+P 2 2-Channel Flame Thrower
+  INTENSITY 
+  PAN 
+## Flow2Jet
+P 1 1-Channel Flow2Jet
+  INTENSITY 
+## Followspot
+P 7 7-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+## Gerb
+P 2 2-Channel Gerb
+  INTENSITY 
+  FOCUS 
+## Invisiblelight
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## Iris700Gobo
+P 10 10-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Gobo Slots
+  FOCUS Gobo Zoom
+  FOCUS , // Gobo Rot
+## LEDPanel2
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## LEDfountain
+P 3 3-Channel Mode
+  RED 
+  GREEN 
+  BLUE 
+## Laser
+P 19 19-Channel Mode
+  INTENSITY 1: Intensity
+  RED 2: R1
+  GREEN 3: G1
+  BLUE 4: B1
+  RED 5: R2
+  GREEN 6: G2
+  BLUE 7: B2
+  RED 8: R3
+  GREEN 9: G3
+  BLUE 10: B3
+  FOCUS 11: Pattern
+  FOCUS 12: Size
+  FOCUS 13: Amplitude
+  FOCUS 14: Speed
+  FOCUS 15: Rotation
+  PAN 16: Pan
+  TILT 17: Tilt
+  FOCUS 18: Focus
+  FOCUS 19: Persistence
+## LaserMirror
+P 5 5-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+## LedFacade
+P 4 4-Channel Pixel (Dimmer/R/G/B)
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## MacVip
+P 7 7ch - Standard
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT ,
+P 10 10ch - Extended
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism
+  FOCUS Prism Zoom
+  FOCUS Prism Rotation
+## MiniBar
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## MiniScanGobos
+P 10 10-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism Beams
+  FOCUS Prism Zoom
+  FOCUS , // Prism Rotation
+## MiniSpotGobos
+P 10 10-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism Beams
+  FOCUS Prism Zoom
+  FOCUS , // Prism Rotation
+## Miniwash
+P 7 7-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+## Moving500
+P 7 7ch - Standard
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT ,
+P 10 10ch - Extended
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism
+  FOCUS Prism Zoom
+  FOCUS Prism Rotation
+## MovingBeam
+P 7 7ch - Standard
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT ,
+P 10 10ch - Extended
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism
+  FOCUS Prism Zoom
+  FOCUS Prism Rotation
+## MovingJet
+P 3 3-Channel Mode
+  INTENSITY 
+  PAN 
+  TILT 
+## MovingMiniBar
+P 5 5ch - Unite Beam
+  INTENSITY 
+  TILT 
+  RED 
+  GREEN 
+  BLUE ,
+P 35 35ch - Alone Beam
+  INTENSITY .addSlot(SharedSlots.TILT).addSlot(SharedSlots.RED).addSlot(SharedSlots.GREEN).addSlot(SharedSlots.BLUE)
+  INTENSITY .addSlot(SharedSlots.TILT).addSlot(SharedSlots.RED).addSlot(SharedSlots.GREEN).addSlot(SharedSlots.BLUE)
+  INTENSITY .addSlot(SharedSlots.TILT).addSlot(SharedSlots.RED).addSlot(SharedSlots.GREEN).addSlot(SharedSlots.BLUE)
+  INTENSITY .addSlot(SharedSlots.TILT).addSlot(SharedSlots.RED).addSlot(SharedSlots.GREEN).addSlot(SharedSlots.BLUE)
+  INTENSITY .addSlot(SharedSlots.TILT).addSlot(SharedSlots.RED).addSlot(SharedSlots.GREEN).addSlot(SharedSlots.BLUE)
+  INTENSITY .addSlot(SharedSlots.TILT).addSlot(SharedSlots.RED).addSlot(SharedSlots.GREEN).addSlot(SharedSlots.BLUE)
+  INTENSITY .addSlot(SharedSlots.TILT).addSlot(SharedSlots.RED).addSlot(SharedSlots.GREEN).addSlot(SharedSlots.BLUE)
+## MovingScanBeams
+P 10 10-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism Beams
+  FOCUS Prism Zoom
+  FOCUS , // Prism Rotation
+## MovingScan
+P 7 7ch - Standard
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT ,
+P 10 10ch - Extended
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism
+  FOCUS Prism Zoom
+  FOCUS Prism Rotation
+## MovingVL2CBeams
+P 10 10-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism Beams
+  FOCUS Prism Zoom
+  FOCUS , // Prism Rotation
+## MovingVL2C
+P 7 7ch - Standard
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT ,
+P 10 10ch - Extended
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism
+  FOCUS Prism Zoom
+  FOCUS Prism Rotation
+## MovingVL6
+P 7 7ch - Standard
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT ,
+P 10 10ch - Extended
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism
+  FOCUS Prism Zoom
+  FOCUS Prism Rotation
+## Movingbar
+P 7 7-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+## OrganPipes
+P 1 1-Channel Mode
+  INTENSITY 
+## OrganPipesInv
+P 1 1-Channel Mode
+  INTENSITY 
+## Par1000Amber
+P 1 1-Channel Mode
+  INTENSITY 
+## Par1000Blue
+P 1 1-Channel Mode
+  INTENSITY 
+## Par1000
+P 1 1-Channel Mode
+  INTENSITY 
+## Par1000Green
+P 1 1-Channel Mode
+  INTENSITY 
+## Par1000Lightblue
+P 1 1-Channel Mode
+  INTENSITY 
+## Par1000Magenta
+P 1 1-Channel Mode
+  INTENSITY 
+## Par1000Orange
+P 1 1-Channel Mode
+  INTENSITY 
+## Par1000Purple
+P 1 1-Channel Mode
+  INTENSITY 
+## Par1000Red
+P 1 1-Channel Mode
+  INTENSITY 
+## Par1000White
+P 1 1-Channel Mode
+  INTENSITY 
+## ParLed
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## ParScroller
+P 2 2-Channel Mode
+  INTENSITY 
+  INTENSITY 
+## ProSpotGobo
+P 10 10-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Gobo Slots
+  FOCUS Gobo Zoom
+  FOCUS , // Gobo Rot
+## PyroFan
+DMXPersonality threeChannel = P 3 3-Channel Pyro Fan (All Tubes)
+  INTENSITY 
+  TILT 
+  FOCUS ;
+DMXPersonality tenChannel = P 10 10-Channel Pyro Fan (Per Tube);
+tenChannel.addSlot(new DMXSlot("Tube " + i, RDMSlotType.ST_PRIMARY, RDMSlotID.SD_INTENSITY));
+## RGBbar
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## RgbFireworkLauncher
+P 7 7-Channel RGB Firework
+  INTENSITY 
+  TILT 
+  FOCUS 
+  RED 
+  GREEN 
+  BLUE 
+  EFFECT 
+## Robitspot
+P 7 7ch - Standard
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT ,
+P 10 10ch - Extended
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism
+  FOCUS Prism Zoom
+  FOCUS Prism Rotation
+## Searchlight
+P 7 7ch - Standard
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT ,
+P 10 10ch - Extended
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism
+  FOCUS Prism Zoom
+  FOCUS Prism Rotation
+## Sharplus
+P 7 7ch - Standard
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT ,
+P 10 10ch - Extended
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism
+  FOCUS Prism Zoom
+  FOCUS Prism Rotation
+## Source4
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## Source4warm
+P 1 1-Channel Mode
+  INTENSITY 
+## Spinner
+P 1 1-Channel Mode
+  INTENSITY 
+## SpotXtremeGobo
+P 10 10-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Gobo Slots
+  FOCUS Gobo Zoom
+  FOCUS , // Gobo Rot
+## Strobe
+P 4 4-Channel Legacy
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE ,
+P 5 5-Channel Focus
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS ,
+P 6 6-Channel Focus + Strobe
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  STROBE ,
+P 3 3-Channel Strobe RGB Only
+  RED 
+  GREEN 
+  BLUE 
+## VL6000
+P 7 7-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+## VL6CGobo
+P 10 10-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Gobo Slots
+  FOCUS Gobo Zoom
+  FOCUS , // Gobo Rot
+## VaseWaterJet
+P 1 1-Channel Mode
+  INTENSITY 
+## Verticalbar
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## Vervespot
+P 7 7ch - Standard
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT ,
+P 10 10ch - Extended
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+  FOCUS Prism
+  FOCUS Prism Zoom
+  FOCUS Prism Rotation
+## WaltzCurtain
+P 3 2-Channel Mode
+  INTENSITY 
+  TILT 
+  TILT 
+## WaltzesWaterJet
+P 3 2-Channel Mode
+  INTENSITY 
+  TILT 
+  TILT 
+## Washlight
+P 7 7-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+## WaterJetBig
+P 1 1-Channel Mode
+  INTENSITY 
+## WaterJetBloom
+P 1 1-Channel Mode
+  INTENSITY 
+## WaterJetCentral
+P 1 1-Channel Mode
+  INTENSITY 
+## WaterJetCone
+P 1 1-Channel Mode
+  INTENSITY 
+## WaterJet
+P 1 1-Channel Mode
+  INTENSITY 
+## WaterJetFog
+P 1 1-Channel Mode
+  INTENSITY 
+## WaterJetSpread
+P 1 1-Channel Mode
+  INTENSITY 
+## WaterJetThin
+P 1 1-Channel Mode
+  INTENSITY 
+## WhiteStrobe
+P 1 1-Channel Mode
+  INTENSITY 
+## a1x1par64
+P 1 Red
+  INTENSITY ,
+P 1 Green
+  INTENSITY ,
+P 1 Blue
+  INTENSITY ,
+P 1 Yellow
+  INTENSITY ,
+P 1 Orange
+  INTENSITY ,
+P 1 Purple
+  INTENSITY ,
+P 1 Magenta
+  INTENSITY ,
+P 1 Lightblue
+  INTENSITY ,
+P 1 White
+  INTENSITY ,
+P 4 iRGB
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## a2x2par64_blue
+P 1 1-Channel Mode
+  INTENSITY 
+## a2x2par64_green
+P 1 1-Channel Mode
+  INTENSITY 
+## a2x2par64_lightblue
+P 1 1-Channel Mode
+  INTENSITY 
+## a2x2par64_magenta
+P 1 1-Channel Mode
+  INTENSITY 
+## a2x2par64_orange
+P 1 1-Channel Mode
+  INTENSITY 
+## a2x2par64_purple
+P 1 1-Channel Mode
+  INTENSITY 
+## a2x2par64_red
+P 1 1-Channel Mode
+  INTENSITY 
+## a2x2par64_warm
+P 1 1-Channel Mode
+  INTENSITY 
+## a2x2par64_white
+P 1 1-Channel Mode
+  INTENSITY 
+## a2x2par64_yellow
+P 1 1-Channel Mode
+  INTENSITY 
+## a2x8par64
+P 1 Red
+  INTENSITY ,
+P 1 Green
+  INTENSITY ,
+P 1 Blue
+  INTENSITY ,
+P 1 Yellow
+  INTENSITY ,
+P 1 Orange
+  INTENSITY ,
+P 1 Purple
+  INTENSITY ,
+P 1 Magenta
+  INTENSITY ,
+P 1 Lightblue
+  INTENSITY ,
+P 1 White
+  INTENSITY ,
+P 4 iRGB
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## a6x3par64_vertical
+P 1 Red
+  INTENSITY ,
+P 1 Green
+  INTENSITY ,
+P 1 Blue
+  INTENSITY ,
+P 1 Yellow
+  INTENSITY ,
+P 1 Orange
+  INTENSITY ,
+P 1 Purple
+  INTENSITY ,
+P 1 Magenta
+  INTENSITY ,
+P 1 Lightblue
+  INTENSITY ,
+P 1 White
+  INTENSITY ,
+P 4 iRGB
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## bigscroller
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## horizontalscroller
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## par56_blue
+P 1 1-Channel Mode
+  INTENSITY 
+## par56_green
+P 1 1-Channel Mode
+  INTENSITY 
+## par56_lightblue
+P 1 1-Channel Mode
+  INTENSITY 
+## par56_magenta
+P 1 1-Channel Mode
+  INTENSITY 
+## par56_orange
+P 1 1-Channel Mode
+  INTENSITY 
+## par56_purple
+P 1 1-Channel Mode
+  INTENSITY 
+## par56_red
+P 1 1-Channel Mode
+  INTENSITY 
+## par56_warm
+P 1 1-Channel Mode
+  INTENSITY 
+## par56_white
+P 1 1-Channel Mode
+  INTENSITY 
+## par56_yellow
+P 1 1-Channel Mode
+  INTENSITY 
+## truss3lights
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## verticalscroller
+P 4 4-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+## washled
+P 7 7-Channel Mode
+  INTENSITY 
+  RED 
+  GREEN 
+  BLUE 
+  FOCUS 
+  PAN 
+  TILT 
+## x8par_blue
+P 1 1-Channel Mode
+  INTENSITY 
+## x8par_green
+P 1 1-Channel Mode
+  INTENSITY 
+## x8par_lightblue
+P 1 1-Channel Mode
+  INTENSITY 
+## x8par_magenta
+P 1 1-Channel Mode
+  INTENSITY 
+## x8par_orange
+P 1 1-Channel Mode
+  INTENSITY 
+## x8par_purple
+P 1 1-Channel Mode
+  INTENSITY 
+## x8par_red
+P 1 1-Channel Mode
+  INTENSITY 
+## x8par_warm
+P 1 1-Channel Mode
+  INTENSITY 
+## x8par_white
+P 1 1-Channel Mode
+  INTENSITY 
+## x8par_yellow
+P 1 1-Channel Mode
+  INTENSITY 

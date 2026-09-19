@@ -1,0 +1,9 @@
+# ETC/Flying Pig OS software (not redistributable): download tnt_177 from ETC's legacy site, see README
+mame/roms/
+os/
+*.zip
+hdr_*.txt
+# run-time logs
+*.out
+*.err
+disks/show1.img
