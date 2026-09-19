@@ -4,6 +4,7 @@
 --   key <name>              press an AT keyboard key (field name as MAME shows it, e.g. "S", "Enter", "<--", "F1")
 --   pkey <name>             press a front panel key field, e.g. "Panel key 5"
 --   touch <screen> <x> <y>  touch LCD <screen> (1 or 2) at 8-bit coordinates (x*255/640, y*255/480)
+--   drag <screen> <x1> <y1> <x2> <y2> [steps]  pen down, slide, pen up (list scrolling)
 --   snap                    take a snapshot (snap/wholehog2/NNNN.png)
 -- default: wait 14; touch 2 151 138; wait 3; snap
 local script = os.getenv("HOG2_SCRIPT") or "wait 14;touch 2 151 138;wait 3;snap"
@@ -35,12 +36,23 @@ local function key_name(words)
 end
 
 local idx, phase, t_next = 1, 0, 0
+local drag = nil
 local held = {}
 local function step()
 	local now = emu.time()
 	if now < t_next then return end
 	if idx > #steps then return end
 	local s = steps[idx]
+	if phase == 2 then
+		-- drag in progress: move the pointer one step, release at the end
+		drag.i = drag.i + 1
+		local t = drag.i / drag.n
+		drag.fx:set_value(math.floor(drag.x1 + (drag.x2 - drag.x1) * t))
+		drag.fy:set_value(math.floor(drag.y1 + (drag.y2 - drag.y1) * t))
+		if drag.i >= drag.n then phase = 1 end
+		t_next = now + 0.04
+		return
+	end
 	if phase == 1 then
 		for _, f in ipairs(held) do f:set_value(0) end
 		held = {}
@@ -86,6 +98,20 @@ local function step()
 		if f then f:set_value(tonumber(s[3])) end
 		print("lua: fader " .. s[2] .. " = " .. s[3])
 		idx = idx + 1
+	elseif cmd == "drag" then
+		-- drag <screen 1|2> <x1> <y1> <x2> <y2> [steps]: pen down at 1, slide to 2, pen up
+		local scr = tonumber(s[2]) - 1
+		local fx = find_field(":link:panel", "Touch pointer X")
+		local fy = find_field(":link:panel", "Touch pointer Y")
+		local fb = find_field(":link:panel", "Touch")
+		local function X(v) return (scr * 640 + tonumber(v) * 640 / 255) * 4096 / 1280 end
+		local function Y(v) return tonumber(v) * 4096 / 255 end
+		drag = { fx = fx, fy = fy, x1 = X(s[3]), y1 = Y(s[4]), x2 = X(s[5]), y2 = Y(s[6]), n = tonumber(s[7] or "20"), i = 0 }
+		fx:set_value(math.floor(drag.x1)); fy:set_value(math.floor(drag.y1))
+		fb:set_value(1); held = { fb }
+		print("lua: drag " .. s[2] .. " from " .. s[3] .. "," .. s[4] .. " to " .. s[5] .. "," .. s[6])
+		phase = 2
+		t_next = now + hold
 	elseif cmd == "touch" then
 		-- touch <screen 1|2> <x 0..255> <y 0..255> on that LCD; the panel has one pointer over both LCDs (12-bit)
 		local scr = tonumber(s[2]) - 1

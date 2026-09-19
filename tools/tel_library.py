@@ -86,13 +86,14 @@ def hog_params(slots):
 # ---------------------------------------------------------------- emit
 lines = []
 entries = []
-product = 900
+product = 100   # 8-bit field: values above 255 spill into the manufacturer byte (900 landed under Varilite)
 for fname in sorted(fixtures, key=str.lower):
     for nch, label, slots in fixtures[fname]:
         if len(slots) != nch:
             print("warning: %s %s declares %d channels but lists %d slots" % (fname, label, nch, len(slots)), file=sys.stderr)
-        short = re.sub(r"[^A-Za-z0-9]", "", fname)[:9] + str(nch)          # fixture label: no spaces
-        name = ("%s %dch" % (re.sub(r"^a(\d)", r"\1", fname), nch))[:16]     # shown in Add Fixtures
+        short = re.sub(r"[^A-Za-z0-9]", "", fname)[:8 - len(str(nch))] + str(nch)   # fixture label: 8 chars, no spaces
+        suffix = " %dch" % nch                                                      # name shown in Add Fixtures: 15 chars
+        name = re.sub(r"^a(\d)", r"\1", fname).replace("_", " ")[:15 - len(suffix)] + suffix
         params = hog_params(slots)
         e = ["fixture = %s" % short, "manufacturer = 0", "product = %d" % product, "name = %s" % name]
         product += 1

@@ -123,6 +123,21 @@ Two fixes to MAME's upd765 core were needed for the polled driver (`tools/patch_
 `src/devices/machine/upd765.cpp`): report the non-DMA execution bit in MSR during FORMAT TRACK, and do not ask for
 the first sector's ID bytes twice.
 
+## Theatrical Extra Lights fixture library
+`disks/tel_fixtures.img` is a show disk whose `LIBRARY\_LIB.LIB` carries a Hog II personality for every fixture of the
+Minecraft mod Theatrical Extra Lights (github.com/dumann089/TheatricalExtraLights, branch ver/1.20.1): 143 Hog
+fixtures for the 123 mod fixtures, one per DMX personality ("MovingScan 7ch", "MovingScan 10ch", ...).  Load it with
+Setup -> Change Show -> Load Show; the fixtures then appear in Patch -> Add Fixtures under manufacturer *Generic*,
+sorted by name.  Colour channels default to 255 (white), pan/tilt/focus to 128, intensity to 0, all 8-bit; comment
+names from the Java sources are used for prism/gobo/zoom/laser channels; multi-cell fixtures get numbered
+parameters (Red 2, Int 3, Tube 7...).
+
+`tools/tel_library.py` regenerates the library from `tools/tel_personalities.txt` (a grep of the mod's
+`fixtures/*.java`; regenerate that with the shell loop in the script header if the mod changes).  Put the result on a
+clean show disk with `mcopy -i disk.img -o _LIB.LIB ::/LIBRARY/_LIB.LIB`.  Two limits found the hard way: the
+`product` code is stored in 8 bits (values above 255 spill into the manufacturer byte and the fixtures show up under
+the wrong manufacturer), fixture labels are cut to 8 characters and names to 15.
+
 ## What is emulated and what is not
 
 Working: i960CF OS, synthetic boot ROM (system calls, interrupt install, timer tick, touch calibration),
